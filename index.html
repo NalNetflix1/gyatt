@@ -47,6 +47,52 @@
     <div class="banner">
         <img src="erudio-logotip.png" alt="Erudio Logo">
     </div>
+    <!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zasebna stran z ocenami</title>
+  <style>
+    #content { display: none; }
+    body { font-family: sans-serif; padding: 2rem; }
+    input[type="password"] { padding: 0.5rem; font-size: 1rem; }
+  </style>
+</head>
+<body>
+  <div id="login">
+    <h2>Vnesi geslo za dostop:</h2>
+    <input type="password" id="password" placeholder="Geslo" />
+    <button onclick="checkPassword()">Potrdi</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <div id="content">
+    <!-- Tukaj pride tvoja razpredelnica z ocenami -->
+    <h1>Ocene</h1>
+    <table border="1">
+      <tr><th>Predmet</th><th>Ocena</th></tr>
+      <tr><td>SAP</td><td>3</td></tr>
+      <tr><td>FIP</td><td>3</td></tr>
+      <!-- Dodaj ostale predmete tukaj -->
+    </table>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "65962052";
+      const input = document.getElementById("password").value;
+      const error = document.getElementById("error");
+
+      if (input === correctPassword) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        error.textContent = "Napačno geslo.";
+      }
+    }
+  </script>
+</body>
+</html>
     <h1>NAL NADLER ZAKRAJŠEK - 65962052 - EKONOMSKI TEHNIK 2024/25</h1>
     <table>
         <thead>
