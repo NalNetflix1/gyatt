@@ -11,7 +11,19 @@
             margin: 0;
             padding: 0;
         }
-
+        .banner {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .banner img {
+            max-height: 100px;
+        }
+        .banner h1 {
+            margin: 10px 0 0 0;
+            color: #003366;
+        }
         .table-container {
             padding: 30px;
             max-width: 900px;
@@ -20,64 +32,52 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
-
         th, td {
             text-align: left;
             padding: 12px;
             border-bottom: 1px solid #ddd;
         }
-
         th {
             background-color: #f4f4f4;
             font-weight: bold;
         }
-
         td {
             background-color: #f9f9f9;
         }
-
         tr:hover {
             background-color: #eaeaea;
         }
-
         @media (max-width: 768px) {
             body {
                 font-size: 16px;
             }
-
             .table-container {
                 padding: 20px;
             }
-
             th, td {
                 padding: 10px;
             }
         }
-
         #login {
             text-align: center;
             padding: 60px 20px;
         }
-
         input[type="password"] {
             padding: 10px;
             font-size: 1rem;
             width: 200px;
         }
-
         button {
             padding: 10px 15px;
             font-size: 1rem;
             margin-left: 10px;
             cursor: pointer;
         }
-
         #error {
             color: red;
         }
@@ -85,13 +85,21 @@
 </head>
 <body>
 
+    <!-- ✅ Banner prisoten povsod -->
+    <div class="banner">
+        <img src="Image.jpg" alt="Erudio International School" />
+        <h1>Ocene učenca - Nal Nadler Zakrajšek</h1>
+    </div>
+
+    <!-- ✅ Popravljeno besedilo na prijavni strani -->
     <div id="login">
-        <h2>Dostop do ocen</h2>
+        <h2>Vnesite geslo</h2>
         <input type="password" id="password" placeholder="Vnesi geslo" />
         <button onclick="checkPassword()">Potrdi</button>
         <p id="error"></p>
     </div>
 
+    <!-- ✅ Vsebina z ocenami (skrita dokler ni gesla) -->
     <div id="content" style="display:none;">
         <div class="table-container">
             <h2>NAL NADLER ZAKRAJŠEK - 65962052</h2>
@@ -103,21 +111,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>MNG</td><td>3</td></tr>
-                    <tr><td>TRZ</td><td>4</td></tr>
-                    <tr><td>SAP</td><td>3</td></tr>
-                    <tr><td>PRAC</td><td>2</td></tr>
-                    <tr><td>EKP</td><td>3</td></tr>
-                    <tr><td>PRD1</td><td>OPRAVLJENO</td></tr>
-                    <tr><td>PRD2</td><td>OPRAVLJENO</td></tr>
+                    <tr><td>MNG</td><td>/</td></tr>
+                    <tr><td>TRZ</td><td>/</td></tr>
+                    <tr><td>SAP</td><td>/</td></tr>
+                    <tr><td>PRAC</td><td>/</td></tr>
+                    <tr><td>EKP</td><td>/</td></tr>
+                    <tr><td>PRD1</td><td>/</td></tr>
+                    <tr><td>PRD2</td><td>/</td></tr>
                     <tr><td>ZDG1</td><td>5</td></tr>
                     <tr><td>ZDG2</td><td>4</td></tr>
-                    <tr><td>FIP</td><td>2</td></tr>
-                    <tr><td>GOSP</td><td>3</td></tr>
+                    <tr><td>FIP</td><td>/</td></tr>
+                    <tr><td>GOSP</td><td>/</td></tr>
                     <tr><td>PTDG1</td><td>4</td></tr>
-                    <tr><td>PTGD2</td><td>3</td></tr>
+                    <tr><td>PTGD2</td><td>/</td></tr>
                     <tr><td>NPT</td><td>2</td></tr>
-                    <tr><td>ZDG3</td><td>3</td></tr>
+                    <tr><td>ZDG3</td><td>/</td></tr>
                     <tr><td>ZDG4</td><td>3</td></tr>
                 </tbody>
             </table>
