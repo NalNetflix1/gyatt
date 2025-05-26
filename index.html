@@ -1,53 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erudio Index</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .banner {
-            text-align: center;
-            padding: 10px;
-            background-color: #f8f8f8;
-        }
-        .banner img {
-            max-width: 100%;
-            height: auto;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        @media (max-width: 600px) {
-            table {
-                font-size: 12px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="banner">
-        <img src="erudio-logotip.png" alt="Erudio Logo">
-    </div>
-    <!DOCTYPE html>
 <html lang="sl">
 <head>
   <meta charset="UTF-8" />
@@ -75,83 +26,21 @@
       <tr><td>FIP</td><td>3</td></tr>
       <!-- Dodaj ostale predmete tukaj -->
     </table>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "65962052";
+      const input = document.getElementById("password").value;
+      const error = document.getElementById("error");
+
+      if (input === correctPassword) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        error.textContent = "Napačno geslo.";
+      }
+    }
   </script>
-</body>
-</html>
-    <h1>NAL NADLER ZAKRAJŠEK - 65962052 - EKONOMSKI TEHNIK 2024/25</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>PREDMET</th>
-                <th>OCENA</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>MNG</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>TRZ</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>SAP</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>PRAC</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>EKP</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>PRD1</td>
-                <td>OPRAVLJENO</td>
-            </tr>
-            <tr>
-                <td>PRD2</td>
-                <td>OPRAVLJENO</td>
-            </tr>
-            <tr>
-                <td>ZDG1</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>ZDG2</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>ZDG3</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>ZDG4</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>FIP</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>GOSP</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>PTDG1</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>PTGD2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>NPT</td>
-                <td>2</td>
-            </tr>
-        </tbody>
-    </table>
 </body>
 </html>
